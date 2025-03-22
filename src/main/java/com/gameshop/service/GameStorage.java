@@ -1,0 +1,15 @@
+package com.gameshop.service;
+
+import com.gameshop.model.Game;
+
+import java.util.List;
+
+public interface GameStorage {
+    void add(Game game);
+    void delete(Integer id);
+    Game findByName(String name);
+    List<Game> findByPrice(Float rating);
+    List<Game> findByType(String type);
+    List<Game> findAllSortedByAddData();
+    List<Game> findAll();
+}
